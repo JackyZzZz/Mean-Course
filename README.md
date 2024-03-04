@@ -1,27 +1,57 @@
-# MeanCourse
+<!-- ⚠️ This README has been generated from the file(s) "blueprint.md" ⚠️-->
+[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#pulsepost-documentation)
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.1.3.
+# ➤ PulsePost Documentation
 
-## Development server
+PulsePost is an web application facilitating user interactions through registration, login, and the
+ability to create, share, and view posts with multimedia content.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-## Code scaffolding
+[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#1-install-packages)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## ➤ 1. Install packages:
+1. Install `Git`.
+* On Windows, install the software from https://gitforwindows.org/. `Git Bash` is available after installing `Git`.
+* On Mac and Linux, see https://git-scm.com/book/en/v2/Getting-Started-Installing-Git
+2. Install `Node.js` and `npm` (Install an LTS version instead of the latest. Currently, we require LTS version > 18.x)  
+* On Windows, install from [https://nodejs.org/en/](https://nodejs.org/en/).
+* On Mac and Linux, [use NVM to install NodeJS](https://www.linode.com/docs/guides/how-to-install-use-node-version-manager-nvm/) because it avoids permission issues when using node.
 
-## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#2-clone-the-pulsepost-project)
 
-## Running unit tests
+## ➤ 2. Clone the PulsePost project:
+1. Open a command line (`Git Bash` on Windows) and navigate to a directory where you want to install the PulsePost project.
+2. Clone the project from GitHub by executing 
+```console
+git clone https://github.com/JackyZzZz/PulsePost.git
+```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
+[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#3-start-pulsepost)
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## ➤ 3. Start PulsePost:
+1. Open a command line and navigate to the cloned repository. If you are on Windows, you need to use [Git Bash](https://gitforwindows.org/) as a Linux bash shell in order to run shell scripts.
 
-## Further help
+2. Then install the dependencies. 
+```console
+npm install
+```
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+3. Start the PulsePost Frontend. In the cloned repository:
+```console
+ng serve
+```
+Wait until you see some message like `Application bundle generation complete.`
+
+4. Start the PulsePost Backend. Open a new terminal window. In the cloned repository:
+```console
+npm run start:server
+```
+Wait until you see the message:
+
+ `[nodemon] starting node server.js`
+
+`Connected to database!`
+
+5. Open a browser and access `http://localhost:4200`.
